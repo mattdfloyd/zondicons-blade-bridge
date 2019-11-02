@@ -10,7 +10,7 @@ class ZondiconsServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        app(IconFactory::class)->registerBladeTag();
+        app(SvgFactory::class)->registerBladeTag();
 
         $this->publishes([
             __DIR__.'/../config/zondicons.php' => config_path('zondicons.php'),
